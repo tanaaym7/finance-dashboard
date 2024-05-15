@@ -98,3 +98,9 @@
 }
 
 /* profile */
+.cl-userButtonPopoverFooter{
+  display: none;
+}
+.cl-navbarButtons{
+  gap: 1rem;
+}
