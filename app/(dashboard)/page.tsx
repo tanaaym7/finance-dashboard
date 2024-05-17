@@ -1,8 +1,16 @@
+"use client";
+
+import { useGetAccounts } from "@/freatures/accounts/api/use-get-accounts";
 
 export default function Home() {
+  const { data: accounts, isLoading } = useGetAccounts();
+
+  if (isLoading) {
+    return <div>Loading ....</div>;
+  }
   return (
-    <>
-      <div>dashboard page</div>
-    </>
+    <div>
+      {accounts?.map((account) => <div key={account.id}>{account.name}</div>)}
+    </div>
   );
 }

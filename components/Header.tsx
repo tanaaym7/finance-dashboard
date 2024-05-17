@@ -20,7 +20,7 @@ const Header = () => {
           </ClerkLoading>
         </div>
         <div className="space-y-4">
-          <h1 className="text-2xl font-medium lg:text-4xl">Welcome Back,👋</h1>
+          <h1 className="text-2xl font-medium lg:text-4xl">Welcome Back</h1>
           <p className="text-sm font-medium italic text-[#d7bfe5] lg:text-lg">
             This is your Financial Overview Report
           </p>
