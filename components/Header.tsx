@@ -1,4 +1,4 @@
-import { UserButton, ClerkLoading, ClerkLoaded } from "@clerk/nextjs";
+import { UserButton, useUser, ClerkLoading, ClerkLoaded } from "@clerk/nextjs";
 import { Loader2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import HeaderLogo from "@/components/HeaderLogo";

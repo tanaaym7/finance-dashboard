@@ -3,6 +3,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark, neobrutalism } from "@clerk/themes";
 import { QueryProvider } from "@/providers/query-provider";
+import { SheetProvider } from "@/providers/sheet-provider";
 
 export const metadata: Metadata = {
   title: "FinTrak",
@@ -24,6 +25,7 @@ export default function RootLayout({
     >
       <html lang="en">
         <QueryProvider>
+          <SheetProvider />
           <body className="bg-[#2f3333] text-zinc-100">{children}</body>
         </QueryProvider>
       </html>
